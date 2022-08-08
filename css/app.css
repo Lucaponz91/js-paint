@@ -18,20 +18,14 @@ main{
 .grid_container{
     /* max-height: 90vh; */
     margin: auto;
-    max-width: 1200px;
-    width: 1200px;
-    max-height: 900px;
-    /* grid-auto-flow: dense; */
-    display: grid;
-    grid-template-columns: repeat(60,1fr);
-    /* grid-template-rows: repeat(3,1fr); */
+    max-width: 1204px;
+    width: 1204px;
+    display: flex;
+    flex-wrap:wrap;
     border: 2px solid black;
     
 }
 .cella{
     aspect-ratio: 1;
-    /* min-width: 10px;
-    max-width: 50px; */
     border: 1px solid lightgrey;
-
 }
