@@ -10,6 +10,12 @@ console.dir(buttonElement)
 generaGriglia(width, height)
 }
 )
+// TRY1: EVENT LISTENER DI #TUTTA# LA GRIGLIA
+gridEl.addEventListener('click', function(event){
+    console.log(event.target)
+    console.dir(event)
+}
+)
 
 
 
@@ -33,13 +39,13 @@ function generaGriglia(x, y){
 function creaCelleDiv () {
     // creo il div
     let width = parseInt(document.querySelector('input[name="larghezza"]').value);
-    console.log(width)
+    // console.log(width)
 
     const div = document.createElement('div')
     // div.innerHTML += `style="width: calc(100% / ${width});"`
     if (isNaN(width)){
         div.style.cssText += `width:calc(100% / 60)`
-        console.log('quaqua')
+        // console.log('quaqua')
 
     } else {
 
@@ -52,6 +58,6 @@ function creaCelleDiv () {
     div.classList.add('cella')
     // Aggiungo l'event listener ad ogni div
     // div.addEventListener('click', clickHandler)
-    console.dir(div)
+    // console.dir(div)
     return div
 }
