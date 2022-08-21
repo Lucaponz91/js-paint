@@ -15,6 +15,9 @@ main{
     min-height: 90vh;
     max-height: 90vh; */
 }
+.colors{
+    text-align: center;
+}
 .grid_container{
     /* max-height: 90vh; */
     margin: auto;
@@ -22,10 +25,14 @@ main{
     width: 1204px;
     display: flex;
     flex-wrap:wrap;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     
 }
 .cella{
     aspect-ratio: 1;
     border: 1px solid lightgrey;
+}
+
+.salmon{
+    background-color: salmon;
 }
