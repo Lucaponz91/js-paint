@@ -10,7 +10,6 @@ buttonElement.addEventListener('click', function () {
     // console.log(width, height)
     // console.dir(buttonElement)
     generaGriglia(width, height)
-
 }
 )
 // TRY1: EVENT LISTENER DI #TUTTA# LA GRIGLIA
@@ -28,9 +27,6 @@ gridEl.addEventListener('mousedown', addColorDown)
 //             event.stopPropagation()
 //             event.target.style.backgroundColor = inputColor.value
 //         }
-
-//         // Your code here!
-
 //     }
 // });
 // gridEl.addEventListener('mousedown', addColor)
@@ -53,11 +49,6 @@ function addColorMove(event) {
     if (event.buttons == 1) {
         event.preventDefault();
         if (event.target.nodeName === 'DIV') {
-            // console.dir(inputColor)
-            // console.log(event.target)
-            // console.dir(event)
-            // console.log('funge')
-            // console.log(this)
             event.stopPropagation()
             event.target.style.backgroundColor = inputColor.value
         }
@@ -82,7 +73,6 @@ function generaGriglia(x, y) {
 
     }
 }
-
 
 // ##### FUNZIONE CREAZIONE DIV
 function creaCelleDiv() {
