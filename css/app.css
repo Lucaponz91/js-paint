@@ -11,22 +11,16 @@
 }
 main{
     background-color: #F3F5F6;
-    /* min-width: 1200px;
-    min-height: 90vh;
-    max-height: 90vh; */
 }
 .colors{
     text-align: center;
 }
 .grid_container{
-    /* max-height: 90vh; */
     margin: auto;
     max-width: 1204px;
     width: 1204px;
     display: flex;
     flex-wrap:wrap;
-    /* border: 2px solid black; */
-    
 }
 .cella{
     aspect-ratio: 1;

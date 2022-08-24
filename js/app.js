@@ -7,41 +7,13 @@ buttonElement.addEventListener('click', function () {
     let width = parseInt(document.querySelector('input[name="larghezza"]').value);
     let height = parseInt(document.querySelector('input[name="altezza"]').value);
     gridEl.innerHTML = ``
-    // console.log(width, height)
-    // console.dir(buttonElement)
+
     generaGriglia(width, height)
 }
 )
-// TRY1: EVENT LISTENER DI #TUTTA# LA GRIGLIA
-// gridEl.addEventListener('mousemove', addColor)
+// EVENT LISTENER DI #TUTTA# LA GRIGLIA
 gridEl.addEventListener('mousemove', addColorMove)
 gridEl.addEventListener('mousedown', addColorDown)
-//     if (event.buttons == 1) {
-//         event.preventDefault();
-//         if (event.target.nodeName === 'DIV') {
-//             //     console.dir(inputColor)
-//             // console.log(evt.target)
-//             // console.dir(evt)
-//             // console.log('funge')
-//             // console.log(this)
-//             event.stopPropagation()
-//             event.target.style.backgroundColor = inputColor.value
-//         }
-//     }
-// });
-// gridEl.addEventListener('mousedown', addColor)
-// gridEl.addEventListener('mousemove', addColor)
-// gridEl.addEventListener('mouseover', addColor)
-// {
-//     console.log(event.target)
-//     console.dir(event)
-//     // div.classList.add('salmon');
-// }
-
-
-
-
-
 
 // ################## FUNZIONI ############################
 // ##### FUNZIONI AGGIUNGI COLORE
@@ -54,7 +26,6 @@ function addColorMove(event) {
         }
     }
 }
-
 function addColorDown(event) {
     if (event.target.nodeName === 'DIV') {
         event.stopPropagation()
@@ -73,7 +44,6 @@ function generaGriglia(x, y) {
 
     }
 }
-
 // ##### FUNZIONE CREAZIONE DIV
 function creaCelleDiv() {
     // creo il div
